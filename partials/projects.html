@@ -1,0 +1,77 @@
+<div class="container">
+				
+				<div class="row mar-bot40">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+							<h2 class="section-heading animated" data-animation="bounceInUp">Past Projects</h2>
+						</div>
+					</div>
+				</div>
+					
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+
+                                <article class="col-md-4 isotopeItem webdesign">
+									<div class="portfolio-item">
+										<img src="img/portfolio/trello_gold.png" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info" ng-click="set_project('trello_gold')">
+												<h5><a>Trello Gold</a></h5>
+												<!-- <a class="fancybox" ><i class="fa fa-plus fa-2x"></i></a> -->
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <article class="col-md-4 isotopeItem photography">
+									<div class="portfolio-item">
+										<img src="img/portfolio/cavebat.png" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info" ng-click="set_project('cavebat')">
+												<h5><a>CAVEBAT</a></h5>
+												<!-- <a class="fancybox"><i class="fa fa-plus fa-2x"></i></a> -->
+											</div>										   
+										 </div>
+									</div>
+                                </article>
+								
+
+                                <article class="col-md-4 isotopeItem photography">
+									<div class="portfolio-item">
+										<img src="img/portfolio/ants.png" alt="" />
+										 <div class="portfolio-desc align-center">
+											<div class="folio-info" ng-click="set_project('ants')">
+												<h5><a>Ants on the Ground</a></h5>
+												<!-- <a class="fancybox"><i class="fa fa-plus fa-2x"></i></a> -->
+											 </div>										   
+										 </div>
+									</div>
+                                </article>
+
+                                <ng-switch on="project">
+                                	<div ng-switch-when="cavebat">
+	                                	<div ng-include="'partials/projects/cavebat.html'">
+	                                	</div>
+                                	</div>
+                                	<div ng-switch-when="trello_gold">
+	                                	<div ng-include="'partials/projects/trello_gold.html'">
+	                                	</div>
+                                	</div>
+                                	<div ng-switch-when="ants">
+	                                	<div ng-include="'partials/projects/ants.html'">
+	                                	</div>
+                                	</div>
+
+  									<div ng-switch-default></div>
+                                </ng-switch>
+                                        
+							</div>
+                                     
+
+							</div>
+                        </div>
+				
+			</div>
